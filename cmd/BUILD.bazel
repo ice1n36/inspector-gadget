@@ -8,5 +8,9 @@ go_library(
     ],
     importpath = "github.com/ice1n36/inspector-gadget/cmd",
     visibility = ["//visibility:public"],
-    deps = ["@com_github_spf13_cobra//:go_default_library"],
+    deps = [
+        "//gadget:go_default_library",
+        "@com_github_spf13_afero//:go_default_library",
+        "@com_github_spf13_cobra//:go_default_library",
+    ],
 )
