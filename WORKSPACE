@@ -159,8 +159,8 @@ go_repository(
 go_repository(
     name = "com_github_stretchr_testify",
     importpath = "github.com/stretchr/testify",
-    sum = "h1:2E4SXV/wtOkTonXsotYi4li6zVWxYlZuYNCXe9XRJyk=",
-    version = "v1.4.0",
+    sum = "h1:TivCn/peBQ7UY8ooIcPgZFpTNSz0Q2U6UrFlUfqbe0Q=",
+    version = "v1.3.0",
 )
 
 go_repository(
@@ -236,8 +236,8 @@ go_repository(
 go_repository(
     name = "org_golang_x_tools",
     importpath = "golang.org/x/tools",
-    sum = "h1:0FYNp0PF9kFm/ZUrvcJiQ12IUJJG7iAc6Cu01wbKrbU=",
-    version = "v0.0.0-20191114200427-caa0b0f7d508",
+    sum = "h1:NCy3Ohtk6Iny5V/reW2Ktypo4zIpWBdRJ1uFMjBxdg8=",
+    version = "v0.0.0-20191112195655-aa38f8e97acc",
 )
 
 go_repository(
@@ -250,8 +250,8 @@ go_repository(
 go_repository(
     name = "org_uber_go_atomic",
     importpath = "go.uber.org/atomic",
-    sum = "h1:Ezj3JGmsOnG1MoRWQkPBsKLe9DwWD9QeXzTRzzldNVk=",
-    version = "v1.6.0",
+    sum = "h1:cxzIVoETapQEqDhQu3QfnvXAV4AlzcvUCxkVUFw3+EU=",
+    version = "v1.4.0",
 )
 
 go_repository(
@@ -278,8 +278,8 @@ go_repository(
 go_repository(
     name = "org_uber_go_multierr",
     importpath = "go.uber.org/multierr",
-    sum = "h1:KCa4XfM8CWFCpxXRGok+Q0SS/0XBhMDbHHGABQLvD2A=",
-    version = "v1.5.0",
+    sum = "h1:HoEmRHQPVSqub6w2z2d2EOVs2fjyFRGyofhKuyDq0QI=",
+    version = "v1.1.0",
 )
 
 go_repository(

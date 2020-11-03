@@ -5,5 +5,8 @@ go_library(
     srcs = ["injector.go"],
     importpath = "github.com/ice1n36/inspector-gadget/gadget",
     visibility = ["//visibility:public"],
-    deps = ["@com_github_spf13_afero//:go_default_library"],
+    deps = [
+        "//utils:go_default_library",
+        "@com_github_spf13_afero//:go_default_library",
+    ],
 )
