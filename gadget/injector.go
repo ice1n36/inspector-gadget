@@ -38,8 +38,8 @@ func NewInjector(fs afero.Fs, shell utils.Shell, interactiveMode bool, nativeLib
 		shell:              shell,
 		interactiveMode:    interactiveMode,
 		nativeLibInjection: nativeLibInjection,
-		apkresigner:        utils.NewAPKResigner(),
-		nativeLibInjector:  utils.NewNativeLibInjector(),
+		apkresigner:        utils.NewAPKResigner(shell),
+		nativeLibInjector:  utils.NewNativeLibInjector(shell),
 	}
 }
 
@@ -123,7 +123,7 @@ func (i *injector) InjectGadget(appPath string, outputPath string, gadgetPath st
 		}
 
 		i.nativeLibInjector.InjectIntoLibrary(
-			apktool.GetIntermediateDir()+"lib/arm64-v8a/libfridagadget.so",
+			"libfridagadget.so",
 			apktool.GetIntermediateDir()+nativeLibToInjectTo)
 
 		err = apktool.Build(outputPath, false)
