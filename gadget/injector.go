@@ -13,8 +13,9 @@ import (
 )
 
 var (
-	_libSearch  = "lib/.*\\.so"
-	_arm64Seach = "arm64-v8a"
+	_libSearch          = "lib/.*\\.so"
+	_arm64Seach         = "arm64-v8a"
+	_fridaGadgetLibName = "libfridagadget.so"
 )
 
 // Injector is the interface for things that inject gadgets
@@ -123,7 +124,7 @@ func (i *injector) InjectGadget(appPath string, outputPath string, gadgetPath st
 		}
 
 		i.nativeLibInjector.InjectIntoLibrary(
-			"libfridagadget.so",
+			_fridaGadgetLibName,
 			apktool.GetIntermediateDir()+nativeLibToInjectTo)
 
 		err = apktool.Build(outputPath, false)
